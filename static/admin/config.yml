@@ -1,0 +1,36 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: 'static/assets'
+public_folder: '/assets'
+
+editor:
+  preview: false
+
+collections:
+  - name: 'pages'
+    label: 'Pages'
+    files:
+      - name: home
+        label: Home Page
+        file: content/pages/home.yml
+        fields:
+          - name: docTitle
+            widget: string
+          - name: header
+            widget: object
+            fields:
+              - name: logo
+                widget: image
+              - name: nav
+                widget: object
+                fields:
+                  - name: item1
+                    widget: string
+                  - name: item2
+                    widget: string
+                  - name: item3
+                    widget: string
+              - name: button
+                widget: string
