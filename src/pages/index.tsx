@@ -59,6 +59,7 @@ const Button = styled.button`
 `
 const Main = styled.main`
   margin: 2rem auto 0;
+  padding: 5rem;
 `
 
 const ImageGrid = styled.div`
@@ -67,7 +68,7 @@ const ImageGrid = styled.div`
   gap: 1rem;
   max-width: 50rem;
   margin: 2rem auto 0;
-  margin-top: 3rem;
+  margin-top: 2rem;
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -78,7 +79,7 @@ const ImageGrid = styled.div`
 `
 
 const Spotify = styled.img`
-  width: 80%;
+  width: 65%;
   height: auto;
   cursor: pointer;
   display: block;
@@ -91,7 +92,7 @@ const Spotify = styled.img`
 `
 
 const AppleMusic = styled.img`
-  width: 80%;
+  width: 65%;
   height: auto;
   cursor: pointer;
   margin: 0.5rem;
@@ -104,7 +105,7 @@ const AppleMusic = styled.img`
   }
 `
 const Bandcamp = styled.img`
-  width: 80%;
+  width: 65%;
   height: auto;
   cursor: pointer;
   margin: 1rem;
@@ -118,7 +119,7 @@ const Bandcamp = styled.img`
 `
 
 const Deezer = styled.img`
-  width: 80%;
+  width: 65%;
   height: auto;
   cursor: pointer;
   margin: 0.7rem;
@@ -132,7 +133,7 @@ const Deezer = styled.img`
 `
 
 const Youtube = styled.img`
-  width: 80%;
+  width: 65%;
   height: auto;
   cursor: pointer;
   margin: 0.7rem;
@@ -156,6 +157,15 @@ const SoundCloud = styled.img`
     filter: none; /* Возвращаем изначальный цвет при наведении */
   }
 `
+const ListenTo = styled.div`
+  height: auto;
+  width: 50%;
+  margin: 3rem 0;
+  font-size: 1.2rem;
+  color: #999;
+  font-family: 'Metropolis', sans-serif;
+  font-weight: 700;
+`
 // -------------------------------- //
 
 const IndexPage: React.FC<PageProps> = () => {
@@ -172,6 +182,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <Button>{header.button}</Button>
       </Header>
       <Main>
+        <ListenTo>LISTEN TATREAL ON</ListenTo>
         <ImageGrid>
           <a href={main.spotify}>
             <Spotify
