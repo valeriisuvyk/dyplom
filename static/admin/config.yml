@@ -34,3 +34,18 @@ collections:
                     widget: string
               - name: button
                 widget: string
+          - name: main
+            widget: object
+            fields:
+              - name: spotify
+                widget: string
+              - name: applemusic
+                widget: string
+              - name: bandcamp
+                widget: string
+              - name: deezer
+                widget: string
+              - name: youtube
+                widget: string
+              - name: soundcloud
+                widget: sting

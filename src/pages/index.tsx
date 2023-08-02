@@ -76,7 +76,116 @@ const Button = styled.button`
 const Main = styled.main`
   background-color: rgb(162, 162, 162);
   flex: 1 1 auto;
+
+  margin: 2rem auto 0;
+  padding: 5rem;
 `
+
+const ImageGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  max-width: 50rem;
+  margin: 2rem auto 0;
+  margin-top: 2rem;
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+`
+
+const Spotify = styled.img`
+  width: 65%;
+  height: auto;
+  cursor: pointer;
+  display: block;
+  filter: grayscale(100%); /* Добавили серый цвет по умолчанию */
+  transition: filter 0.3s ease-in-out; /* Добавили плавное изменение стиля */
+
+  &:hover {
+    filter: none; /* Возвращаем изначальный цвет при наведении */
+  }
+`
+
+const AppleMusic = styled.img`
+  width: 65%;
+  height: auto;
+  cursor: pointer;
+  margin: 0.5rem;
+  display: block;
+  filter: grayscale(100%); /* Добавили серый цвет по умолчанию */
+  transition: filter 0.3s ease-in-out; /* Добавили плавное изменение стиля */
+
+  &:hover {
+    filter: none; /* Возвращаем изначальный цвет при наведении */
+  }
+`
+const Bandcamp = styled.img`
+  width: 65%;
+  height: auto;
+  cursor: pointer;
+  margin: 1rem;
+  display: block;
+  filter: grayscale(100%); /* Добавили серый цвет по умолчанию */
+  transition: filter 0.3s ease-in-out; /* Добавили плавное изменение стиля */
+
+  &:hover {
+    filter: none; /* Возвращаем изначальный цвет при наведении */
+  }
+`
+
+const Deezer = styled.img`
+  width: 65%;
+  height: auto;
+  cursor: pointer;
+  margin: 0.7rem;
+  display: block;
+  filter: grayscale(100%); /* Добавили серый цвет по умолчанию */
+  transition: filter 0.3s ease-in-out; /* Добавили плавное изменение стиля */
+
+  &:hover {
+    filter: none; /* Возвращаем изначальный цвет при наведении */
+  }
+`
+
+const Youtube = styled.img`
+  width: 65%;
+  height: auto;
+  cursor: pointer;
+  margin: 0.7rem;
+  display: block;
+  filter: grayscale(100%); /* Добавили серый цвет по умолчанию */
+  transition: filter 0.3s ease-in-out; /* Добавили плавное изменение стиля */
+
+  &:hover {
+    filter: none; /* Возвращаем изначальный цвет при наведении */
+  }
+`
+const SoundCloud = styled.img`
+  width: 50%;
+  height: auto;
+  cursor: pointer;
+  display: block;
+  filter: grayscale(100%); /* Добавили серый цвет по умолчанию */
+  transition: filter 0.3s ease-in-out; /* Добавили плавное изменение стиля */
+
+  &:hover {
+    filter: none; /* Возвращаем изначальный цвет при наведении */
+  }
+`
+const ListenTo = styled.div`
+  height: auto;
+  width: 50%;
+  margin: 3rem 0;
+  font-size: 1.2rem;
+  color: #999;
+  font-family: 'Metropolis', sans-serif;
+  font-weight: 700;
+`
+// -------------------------------- //
 
 const Footer = styled.footer`
   display: grid;
@@ -137,7 +246,7 @@ const Copyright = styled.p`
   margin-top: 1.5rem;
 `
 const IndexPage: React.FC<PageProps> = () => {
-  const { header } = content as HomePage
+  const { header, main } = content as HomePage
   return (
     <PageContainer>
       <Header>
@@ -149,7 +258,47 @@ const IndexPage: React.FC<PageProps> = () => {
         </Navigation>
         <Button>{header.button}</Button>
       </Header>
-      <Main></Main>
+      <Main>
+        <ListenTo>LISTEN TATREAL ON</ListenTo>
+        <ImageGrid>
+          <a href={main.spotify}>
+            <Spotify
+              src="https://chillhop.com/wp-content/themes/chillhop/assets/images/streams/spotify.svg"
+              alt="Spotify"
+            />
+          </a>
+          <a href={main.applemusic}>
+            <AppleMusic
+              src="https://chillhop.com/wp-content/themes/chillhop/assets/images/streams/apple.svg"
+              alt="Apple music"
+            />
+          </a>
+          <a href={main.bandcamp}>
+            <Bandcamp
+              src="https://chillhop.com/wp-content/themes/chillhop/assets/images/streams/bandcamp.svg"
+              alt="Bandcamp"
+            />
+          </a>
+          <a href={main.deezer}>
+            <Deezer
+              src="https://chillhop.com/wp-content/themes/chillhop/assets/images/streams/deezer.svg"
+              alt="Deezer"
+            />
+          </a>
+          <a href={main.youtube}>
+            <Youtube
+              src="https://chillhop.com/wp-content/themes/chillhop/assets/images/streams/youtube.svg"
+              alt="Youtube"
+            />
+          </a>
+          <a href={main.soundcloud}>
+            <SoundCloud
+              src="https://chillhop.com/wp-content/themes/chillhop/assets/images/streams/soundcloud.svg"
+              alt="SoundCloud"
+            />
+          </a>
+        </ImageGrid>
+      </Main>
       <Footer>
         <Privacy>
           <TalkToUs>
