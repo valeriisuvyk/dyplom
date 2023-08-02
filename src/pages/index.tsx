@@ -3,16 +3,32 @@ import type { HeadFC, PageProps } from 'gatsby'
 import content from '../../content/pages/home.yml'
 import { HomePage } from '../cms'
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faComments } from '@fortawesome/free-solid-svg-icons'
+import {
+  faYoutube,
+  faTwitter,
+  faFacebook,
+  faInstagram,
+  faSoundcloud,
+  faItunes,
+  faSpotify,
+  faDiscord,
+} from '@fortawesome/free-brands-svg-icons'
 
 const PageContainer = styled.main`
-  background-color: #000020;
+  background-color: white;
   color: white;
   display: flex;
   flex-direction: column;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Metropolis', sans-serif;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 `
 const Header = styled.header`
+  background-color: rgb(51, 51, 51);
   z-index: 10;
   position: fixed;
   top: 0;
@@ -57,7 +73,69 @@ const Button = styled.button`
   background-color: #00a6ff;
   color: white;
 `
+const Main = styled.main`
+  background-color: rgb(162, 162, 162);
+  flex: 1 1 auto;
+`
 
+const Footer = styled.footer`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+
+  background-color: rgb(51, 51, 51);
+  padding: 3rem;
+  justify-content: space-between;
+`
+const Ul = styled.ul`
+  display: flex;
+  gap: 1rem;
+  justify-self: end;
+`
+
+const A = styled.a`
+  &:hover {
+    color: lightgray;
+  }
+  color: white;
+  text-decoration: none;
+`
+// const Icon = styled.i`
+//   :before {
+//     content: '\f167';
+//     font-family: 'Font Awesome 5 Brands';
+//     color: white;
+
+//     width: 1rem;
+//     height: 1rem;
+//   }
+// `
+
+const Privacy = styled.div`
+  display: flex;
+  column-gap: 0.5rem;
+  & span {
+    &:hover {
+      cursor: pointer;
+      color: lightgray;
+    }
+  }
+`
+const TalkToUs = styled.div`
+  display: flex;
+  column-gap: 1rem;
+  &:hover {
+    color: lightgray;
+  }
+  font-weight: 450;
+`
+const Copyright = styled.p`
+  color: rgb(136, 136, 136);
+  font-weight: 450;
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 1.5rem;
+`
 const IndexPage: React.FC<PageProps> = () => {
   const { header } = content as HomePage
   return (
@@ -71,6 +149,60 @@ const IndexPage: React.FC<PageProps> = () => {
         </Navigation>
         <Button>{header.button}</Button>
       </Header>
+      <Main></Main>
+      <Footer>
+        <Privacy>
+          <TalkToUs>
+            <FontAwesomeIcon icon={faComments} />
+            <span>Talk to us</span>
+          </TalkToUs>
+          <span>Privacy Policy</span>
+          <span>Term of service</span>
+        </Privacy>
+        <Ul>
+          <li>
+            <A href="http://youtube.com/user/chillhopdotcom">
+              <FontAwesomeIcon size="lg" icon={faYoutube} />
+            </A>
+          </li>
+          <li>
+            <A href="http://youtube.com/user/chillhopdotcom">
+              <FontAwesomeIcon size="lg" icon={faTwitter} />
+            </A>
+          </li>
+          <li>
+            <A href="http://youtube.com/user/chillhopdotcom">
+              <FontAwesomeIcon size="lg" icon={faFacebook} />
+            </A>
+          </li>
+          <li>
+            <A href="http://youtube.com/user/chillhopdotcom">
+              <FontAwesomeIcon size="lg" icon={faInstagram} />
+            </A>
+          </li>
+          <li>
+            <A href="http://youtube.com/user/chillhopdotcom">
+              <FontAwesomeIcon size="lg" icon={faSoundcloud} />
+            </A>
+          </li>
+          <li>
+            <A href="http://youtube.com/user/chillhopdotcom">
+              <FontAwesomeIcon size="lg" icon={faItunes} />
+            </A>
+          </li>
+          <li>
+            <A href="http://youtube.com/user/chillhopdotcom">
+              <FontAwesomeIcon size="lg" icon={faSpotify} />
+            </A>
+          </li>
+          <li>
+            <A href="http://youtube.com/user/chillhopdotcom">
+              <FontAwesomeIcon icon={faDiscord} size="lg" />
+            </A>
+          </li>
+        </Ul>
+        <Copyright>© 2012-2023 TATREAL MUSIC</Copyright>
+      </Footer>
     </PageContainer>
   )
 }
