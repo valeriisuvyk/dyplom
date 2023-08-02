@@ -13,7 +13,17 @@ export interface HomePage_header {
   button: string;
 }
 
+export interface HomePage_main {
+  spotify: string;
+  applemusic: string;
+  bandcamp: string;
+  deezer: string;
+  youtube: string;
+  soundcloud: any;
+}
+
 export interface HomePage {
   docTitle: string;
   header: HomePage_header;
+  main: HomePage_main;
 }

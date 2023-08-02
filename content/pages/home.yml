@@ -6,3 +6,12 @@ header:
     item2: How it works
     item3: Customer stories
   logo: /assets/icon.png
+main:
+  spotify: https://open.spotify.com/
+  applemusic: https://music.apple.com/ru/browse
+  bandcamp: https://bandcamp.com/
+  deezer: https://www.deezer.com/en/
+  youtube: https://www.youtube.com/
+  soundcloud: https://soundcloud.com/discover
+
+
