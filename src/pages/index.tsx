@@ -74,7 +74,7 @@ const Button = styled.button`
   color: white;
 `
 const Main = styled.main`
-  background-color: rgb(162, 162, 162);
+  background-color: rgb(236, 233, 233);
   flex: 1 1 auto;
 
   margin: 2rem auto 0;
@@ -261,37 +261,37 @@ const IndexPage: React.FC<PageProps> = () => {
       <Main>
         <ListenTo>LISTEN TATREAL ON</ListenTo>
         <ImageGrid>
-          <a href={main.spotify}>
+          <a href={main.music.spotify}>
             <Spotify
               src="https://chillhop.com/wp-content/themes/chillhop/assets/images/streams/spotify.svg"
               alt="Spotify"
             />
           </a>
-          <a href={main.applemusic}>
+          <a href={main.music.itunes}>
             <AppleMusic
               src="https://chillhop.com/wp-content/themes/chillhop/assets/images/streams/apple.svg"
               alt="Apple music"
             />
           </a>
-          <a href={main.bandcamp}>
+          <a href={main.music.bandcamp}>
             <Bandcamp
               src="https://chillhop.com/wp-content/themes/chillhop/assets/images/streams/bandcamp.svg"
               alt="Bandcamp"
             />
           </a>
-          <a href={main.deezer}>
+          <a href={main.music.deezer}>
             <Deezer
               src="https://chillhop.com/wp-content/themes/chillhop/assets/images/streams/deezer.svg"
               alt="Deezer"
             />
           </a>
-          <a href={main.youtube}>
+          <a href={main.music.youtube}>
             <Youtube
               src="https://chillhop.com/wp-content/themes/chillhop/assets/images/streams/youtube.svg"
               alt="Youtube"
             />
           </a>
-          <a href={main.soundcloud}>
+          <a href={main.music.soundcloud}>
             <SoundCloud
               src="https://chillhop.com/wp-content/themes/chillhop/assets/images/streams/soundcloud.svg"
               alt="SoundCloud"
@@ -299,6 +299,7 @@ const IndexPage: React.FC<PageProps> = () => {
           </a>
         </ImageGrid>
       </Main>
+
       <Footer>
         <Privacy>
           <TalkToUs>
@@ -310,42 +311,42 @@ const IndexPage: React.FC<PageProps> = () => {
         </Privacy>
         <Ul>
           <li>
-            <A href="http://youtube.com/user/chillhopdotcom">
+            <A href={main.social.youtube}>
               <FontAwesomeIcon size="lg" icon={faYoutube} />
             </A>
           </li>
           <li>
-            <A href="http://youtube.com/user/chillhopdotcom">
+            <A href={main.social.twitter}>
               <FontAwesomeIcon size="lg" icon={faTwitter} />
             </A>
           </li>
           <li>
-            <A href="http://youtube.com/user/chillhopdotcom">
+            <A href={main.social.facebook}>
               <FontAwesomeIcon size="lg" icon={faFacebook} />
             </A>
           </li>
           <li>
-            <A href="http://youtube.com/user/chillhopdotcom">
+            <A href={main.social.instagram}>
               <FontAwesomeIcon size="lg" icon={faInstagram} />
             </A>
           </li>
           <li>
-            <A href="http://youtube.com/user/chillhopdotcom">
+            <A href={main.music.soundcloud}>
               <FontAwesomeIcon size="lg" icon={faSoundcloud} />
             </A>
           </li>
           <li>
-            <A href="http://youtube.com/user/chillhopdotcom">
+            <A href={main.music.itunes}>
               <FontAwesomeIcon size="lg" icon={faItunes} />
             </A>
           </li>
           <li>
-            <A href="http://youtube.com/user/chillhopdotcom">
+            <A href={main.music.spotify}>
               <FontAwesomeIcon size="lg" icon={faSpotify} />
             </A>
           </li>
           <li>
-            <A href="http://youtube.com/user/chillhopdotcom">
+            <A href={main.social.discord}>
               <FontAwesomeIcon icon={faDiscord} size="lg" />
             </A>
           </li>

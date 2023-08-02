@@ -37,15 +37,33 @@ collections:
           - name: main
             widget: object
             fields:
-              - name: spotify
-                widget: string
-              - name: applemusic
-                widget: string
-              - name: bandcamp
-                widget: string
-              - name: deezer
-                widget: string
-              - name: youtube
-                widget: string
-              - name: soundcloud
-                widget: sting
+              - name: music
+                widget: object
+                fields:
+                  - name: spotify
+                    widget: string
+                  - name: itunes
+                    widget: string
+                  - name: bandcamp
+                    widget: string
+                  - name: deezer
+                    widget: string
+                  - name: youtube
+                    widget: string
+                  - name: soundcloud
+                    widget: sting
+              - name: social
+                widget: object
+                fields:
+                  - name: discord
+                    widget: string
+                  - name: reddit
+                    widget: string
+                  - name: instagram
+                    widget: string
+                  - name: facebook
+                    widget: string
+                  - name: twitter
+                    widget: sting
+                  - name: youtube
+                    widget: string

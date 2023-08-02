@@ -7,11 +7,16 @@ header:
     item3: Customer stories
   logo: /assets/icon.png
 main:
-  spotify: https://open.spotify.com/
-  applemusic: https://music.apple.com/ru/browse
-  bandcamp: https://bandcamp.com/
-  deezer: https://www.deezer.com/en/
-  youtube: https://www.youtube.com/
-  soundcloud: https://soundcloud.com/discover
-
-
+  music:
+    spotify: https://open.spotify.com/
+    itunes: https://music.apple.com/ru/browse
+    bandcamp: https://bandcamp.com/
+    deezer: https://www.deezer.com/en/
+    youtube: https://www.youtube.com/
+    soundcloud: https://soundcloud.com/discover
+  social:
+    discord: https://discord.gg/chillhop
+    reddit: https://discord.gg/chillhop
+    instagram: https://discord.gg/chillhop
+    facebook: https://discord.gg/chillhop
+    twitter: https://discord.gg/chillhop
