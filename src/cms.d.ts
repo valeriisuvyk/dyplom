@@ -19,7 +19,7 @@ export interface HomePage_main_music {
   bandcamp: string;
   deezer: string;
   youtube: string;
-  soundcloud: any;
+  soundcloud: string;
 }
 
 export interface HomePage_main_social {
@@ -27,8 +27,8 @@ export interface HomePage_main_social {
   reddit: string;
   instagram: string;
   facebook: string;
-  twitter: any;
-  youtube: string;
+  twitter: string;
+  twitterlogo: string;
 }
 
 export interface HomePage_main {

@@ -15,6 +15,7 @@ import {
   faSpotify,
   faDiscord,
 } from '@fortawesome/free-brands-svg-icons'
+import twitterx from '../images/icons8-twitterx.svg'
 
 const PageContainer = styled.div`
   background-color: white;
@@ -75,6 +76,10 @@ const Main = styled.main`
   padding: 5rem 0 4rem 4rem;
 `
 
+const PlatformsSection = styled.div``
+
+const SocialsSection = styled.div``
+
 const ImageGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -90,17 +95,26 @@ const ImageGrid = styled.div`
     grid-template-columns: repeat(3, 1fr);
   }
 `
+const SocialsImage = styled.div`
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.7rem;
+  max-width: 50rem;
+  margin: 2rem auto 0;
+  margin-top: 2rem;
+  margin-left: -1.6rem;
+`
 
 const Spotify = styled.img`
   width: 65%;
   height: auto;
   cursor: pointer;
   display: block;
-  filter: grayscale(100%); /* Добавили серый цвет по умолчанию */
-  transition: filter 0.3s ease-in-out; /* Добавили плавное изменение стиля */
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
 
   &:hover {
-    filter: none; /* Возвращаем изначальный цвет при наведении */
+    filter: none;
   }
 `
 
@@ -110,11 +124,11 @@ const AppleMusic = styled.img`
   cursor: pointer;
   margin: 0.5rem;
   display: block;
-  filter: grayscale(100%); /* Добавили серый цвет по умолчанию */
-  transition: filter 0.3s ease-in-out; /* Добавили плавное изменение стиля */
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
 
   &:hover {
-    filter: none; /* Возвращаем изначальный цвет при наведении */
+    filter: none;
   }
 `
 const Bandcamp = styled.img`
@@ -123,11 +137,11 @@ const Bandcamp = styled.img`
   cursor: pointer;
   margin: 1rem;
   display: block;
-  filter: grayscale(100%); /* Добавили серый цвет по умолчанию */
-  transition: filter 0.3s ease-in-out; /* Добавили плавное изменение стиля */
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
 
   &:hover {
-    filter: none; /* Возвращаем изначальный цвет при наведении */
+    filter: none;
   }
 `
 
@@ -137,11 +151,11 @@ const Deezer = styled.img`
   cursor: pointer;
   margin: 0.7rem;
   display: block;
-  filter: grayscale(100%); /* Добавили серый цвет по умолчанию */
-  transition: filter 0.3s ease-in-out; /* Добавили плавное изменение стиля */
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
 
   &:hover {
-    filter: none; /* Возвращаем изначальный цвет при наведении */
+    filter: none;
   }
 `
 
@@ -151,11 +165,11 @@ const Youtube = styled.img`
   cursor: pointer;
   margin: 0.7rem;
   display: block;
-  filter: grayscale(100%); /* Добавили серый цвет по умолчанию */
-  transition: filter 0.3s ease-in-out; /* Добавили плавное изменение стиля */
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
 
   &:hover {
-    filter: none; /* Возвращаем изначальный цвет при наведении */
+    filter: none;
   }
 `
 const SoundCloud = styled.img`
@@ -163,22 +177,115 @@ const SoundCloud = styled.img`
   height: auto;
   cursor: pointer;
   display: block;
-  filter: grayscale(100%); /* Добавили серый цвет по умолчанию */
-  transition: filter 0.3s ease-in-out; /* Добавили плавное изменение стиля */
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
 
   &:hover {
-    filter: none; /* Возвращаем изначальный цвет при наведении */
+    filter: none;
   }
 `
+
+const Discord = styled.img`
+  width: 95%;
+  height: auto;
+  cursor: pointer;
+  margin: 1.3rem;
+  display: block;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+
+  &:hover {
+    filter: none;
+  }
+`
+const Reddit = styled.img`
+  width: 95%;
+  height: auto;
+  cursor: pointer;
+  margin: 0.7rem;
+  display: block;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+
+  &:hover {
+    filter: none;
+  }
+`
+const Instagram = styled.img`
+  width: 95%;
+  height: auto;
+  cursor: pointer;
+  margin: 1.8rem;
+  display: block;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+
+  &:hover {
+    filter: none;
+  }
+`
+
+const Facebook = styled.img`
+  width: 95%;
+  height: auto;
+  cursor: pointer;
+  margin: 1.8rem;
+  display: block;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+
+  &:hover {
+    filter: none;
+  }
+`
+
+const Twitter = styled.img`
+  width: 35%;
+  height: auto;
+  cursor: pointer;
+  margin: 1.2rem;
+  display: block;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+
+  &:hover {
+    filter: none;
+    fill: blue;
+  }
+`
+
 const ListenTo = styled.div`
   height: auto;
   width: 50%;
   margin: 3rem 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #999;
   font-family: 'Metropolis', sans-serif;
   font-weight: 700;
 `
+
+const Social = styled.div`
+  height: auto;
+  width: 80%;
+  margin: 3rem 0;
+  font-size: 1.3rem;
+  color: #999;
+  font-family: 'Metropolis', sans-serif;
+  font-weight: 700;
+`
+
+const AboutMe = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+`
+const InfoAboutMe = styled.div`
+  
+`
+
 // -------------------------------- //
 
 const Footer = styled.footer`
@@ -237,6 +344,8 @@ const Copyright = styled.p`
   text-align: center;
   margin-top: 0.5rem;
 `
+// ------------------------------------------ //
+
 const IndexPage: React.FC<PageProps> = () => {
   const { header, main } = content as HomePage
   return (
@@ -251,45 +360,85 @@ const IndexPage: React.FC<PageProps> = () => {
         <Button>{header.button}</Button>
       </Header>
       <Main>
-        <ListenTo>LISTEN TATREAL ON</ListenTo>
-        <ImageGrid>
-          <a href={main.music.spotify}>
-            <Spotify
-              src="https://chillhop.com/wp-content/themes/chillhop/assets/images/streams/spotify.svg"
-              alt="Spotify"
-            />
-          </a>
-          <a href={main.music.itunes}>
-            <AppleMusic
-              src="https://chillhop.com/wp-content/themes/chillhop/assets/images/streams/apple.svg"
-              alt="Apple music"
-            />
-          </a>
-          <a href={main.music.bandcamp}>
-            <Bandcamp
-              src="https://chillhop.com/wp-content/themes/chillhop/assets/images/streams/bandcamp.svg"
-              alt="Bandcamp"
-            />
-          </a>
-          <a href={main.music.deezer}>
-            <Deezer
-              src="https://chillhop.com/wp-content/themes/chillhop/assets/images/streams/deezer.svg"
-              alt="Deezer"
-            />
-          </a>
-          <a href={main.music.youtube}>
-            <Youtube
-              src="https://chillhop.com/wp-content/themes/chillhop/assets/images/streams/youtube.svg"
-              alt="Youtube"
-            />
-          </a>
-          <a href={main.music.soundcloud}>
-            <SoundCloud
-              src="https://chillhop.com/wp-content/themes/chillhop/assets/images/streams/soundcloud.svg"
-              alt="SoundCloud"
-            />
-          </a>
-        </ImageGrid>
+        <PlatformsSection>
+          <ListenTo>LISTEN TATREAL ON</ListenTo>
+          <ImageGrid>
+            <a href={main.music.spotify}>
+              <Spotify
+                src="https://chillhop.com/wp-content/themes/chillhop/assets/images/streams/spotify.svg"
+                alt="Spotify"
+              />
+            </a>
+            <a href={main.music.itunes}>
+              <AppleMusic
+                src="https://chillhop.com/wp-content/themes/chillhop/assets/images/streams/apple.svg"
+                alt="Apple music"
+              />
+            </a>
+            <a href={main.music.bandcamp}>
+              <Bandcamp
+                src="https://chillhop.com/wp-content/themes/chillhop/assets/images/streams/bandcamp.svg"
+                alt="Bandcamp"
+              />
+            </a>
+            <a href={main.music.deezer}>
+              <Deezer
+                src="https://chillhop.com/wp-content/themes/chillhop/assets/images/streams/deezer.svg"
+                alt="Deezer"
+              />
+            </a>
+            <a href={main.music.youtube}>
+              <Youtube
+                src="https://chillhop.com/wp-content/themes/chillhop/assets/images/streams/youtube.svg"
+                alt="Youtube"
+              />
+            </a>
+            <a href={main.music.soundcloud}>
+              <SoundCloud
+                src="https://chillhop.com/wp-content/themes/chillhop/assets/images/streams/soundcloud.svg"
+                alt="SoundCloud"
+              />
+            </a>
+          </ImageGrid>
+        </PlatformsSection>
+        <SocialsSection>
+          <Social>LETS GET SOCIAL</Social>
+          <SocialsImage>
+            <a href={main.social.discord}>
+              <Discord
+                src="https://chillhop.com/wp-content/themes/chillhop/assets/images/social/discord.svg"
+                alt="Discord"
+              />
+            </a>
+            <a href={main.social.reddit}>
+              <Reddit
+                src="https://chillhop.com/wp-content/themes/chillhop/assets/images/social/reddit.svg"
+                alt="Reddit"
+              />
+            </a>
+            <a href={main.social.instagram}>
+              <Instagram
+                src="https://chillhop.com/wp-content/themes/chillhop/assets/images/social/Instagram.svg"
+                alt="Instagram"
+              />
+            </a>
+            <a href={main.social.facebook}>
+              <Facebook
+                src="https://chillhop.com/wp-content/themes/chillhop/assets/images/social/facebook.png"
+                alt="Facebook"
+              />
+            </a>
+            <a href={main.social.twitter}>
+              <Twitter 
+              src={twitterx} 
+              alt="Twitter" />
+            </a>
+          </SocialsImage>
+        </SocialsSection>
+        <AboutMe>
+        <InfoAboutMe>
+        </InfoAboutMe>
+        </AboutMe>
       </Main>
 
       <Footer>
@@ -351,5 +500,4 @@ const IndexPage: React.FC<PageProps> = () => {
 }
 
 export default IndexPage
-
 export const Head: HeadFC = () => <title>Home Page</title>
