@@ -16,7 +16,7 @@ import {
   faDiscord,
 } from '@fortawesome/free-brands-svg-icons'
 
-const PageContainer = styled.main`
+const PageContainer = styled.div`
   background-color: white;
   color: white;
   display: flex;
@@ -35,7 +35,7 @@ const Header = styled.header`
   left: 0;
   right: 0;
 
-  padding: 0.5rem 2rem;
+  padding: 1rem 4rem;
 
   display: flex;
   justify-content: space-between;
@@ -49,36 +49,30 @@ const Navigation = styled.nav`
   flex-wrap: wrap;
   gap: 0.5rem 2rem;
   margin: 0 0.5rem;
-  & a {
-    color: #ffffff87;
-    text-decoration: none;
-    :hover {
-      color: inherit;
-    }
-  }
 `
 
 const Logo = styled.img`
   cursor: pointer;
-  max-height: 2rem;
-  max-width: 2rem;
+  max-height: 10rem;
+  max-width: 10rem;
 `
+
 const Button = styled.button`
   cursor: pointer;
   font-weight: bold;
   white-space: nowrap;
   padding: 1rem 1.8rem;
   border: none;
-  border-radius: 3px;
-  background-color: #00a6ff;
-  color: white;
+  border-radius: 1rem;
+  background-color: lightgray;
+  color: rgb(51, 51, 51);
 `
 const Main = styled.main`
-  background-color: rgb(236, 233, 233);
+  height: 200vh; //optional
+  background-color: white;
   flex: 1 1 auto;
 
-  margin: 2rem auto 0;
-  padding: 5rem;
+  padding: 5rem 0 4rem 4rem;
 `
 
 const ImageGrid = styled.div`
@@ -193,7 +187,7 @@ const Footer = styled.footer`
   grid-template-rows: 1fr auto;
 
   background-color: rgb(51, 51, 51);
-  padding: 3rem;
+  padding: 2rem 4rem;
   justify-content: space-between;
 `
 const Ul = styled.ul`
@@ -209,16 +203,6 @@ const A = styled.a`
   color: white;
   text-decoration: none;
 `
-// const Icon = styled.i`
-//   :before {
-//     content: '\f167';
-//     font-family: 'Font Awesome 5 Brands';
-//     color: white;
-
-//     width: 1rem;
-//     height: 1rem;
-//   }
-// `
 
 const Privacy = styled.div`
   display: flex;
@@ -238,12 +222,20 @@ const TalkToUs = styled.div`
   }
   font-weight: 450;
 `
+const InfoFooter = styled.span`
+  color: rgb(136, 136, 136);
+  font-weight: 450;
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 1rem;
+`
+
 const Copyright = styled.p`
   color: rgb(136, 136, 136);
   font-weight: 450;
   grid-column: 1 / -1;
   text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
 `
 const IndexPage: React.FC<PageProps> = () => {
   const { header, main } = content as HomePage
@@ -252,9 +244,9 @@ const IndexPage: React.FC<PageProps> = () => {
       <Header>
         <Logo src={header.logo} alt="tatreal" />
         <Navigation>
-          <a href="/">{header.nav.item1}</a>
-          <a href="/">{header.nav.item2}</a>
-          <a href="/">{header.nav.item3}</a>
+          <A href="/">{header.nav.item1}</A>
+          <A href="/">{header.nav.item2}</A>
+          <A href="/">{header.nav.item3}</A>
         </Navigation>
         <Button>{header.button}</Button>
       </Header>
@@ -311,7 +303,7 @@ const IndexPage: React.FC<PageProps> = () => {
         </Privacy>
         <Ul>
           <li>
-            <A href={main.social.youtube}>
+            <A href={main.music.youtube}>
               <FontAwesomeIcon size="lg" icon={faYoutube} />
             </A>
           </li>
@@ -351,7 +343,8 @@ const IndexPage: React.FC<PageProps> = () => {
             </A>
           </li>
         </Ul>
-        <Copyright>© 2012-2023 TATREAL MUSIC</Copyright>
+        <InfoFooter>info@my-site.com</InfoFooter>
+        <Copyright>© 2012-2023 BY TATREAL MUSIC</Copyright>
       </Footer>
     </PageContainer>
   )

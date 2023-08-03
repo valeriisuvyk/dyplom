@@ -1,11 +1,11 @@
 docTitle: tatreal
 header:
-  button: Contact
+  button: Contact me
   nav:
-    item1: What u get
-    item2: How it works
-    item3: Customer stories
-  logo: /assets/icon.png
+    item1: Home
+    item2: Music
+    item3: About me
+  logo: /assets/logo.svg
 main:
   music:
     spotify: https://open.spotify.com/
