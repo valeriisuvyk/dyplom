@@ -51,7 +51,7 @@ collections:
                   - name: youtube
                     widget: string
                   - name: soundcloud
-                    widget: sting
+                    widget: string
               - name: social
                 widget: object
                 fields:
@@ -64,6 +64,6 @@ collections:
                   - name: facebook
                     widget: string
                   - name: twitter
-                    widget: sting
-                  - name: youtube
+                    widget: string
+                  - name: twitterlogo
                     widget: string
