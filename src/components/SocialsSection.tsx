@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import content from '../../content/pages/home.yml'
 import { HomePage } from '../cms'
-// import twitterx from '../images/icons8-twitterx.svg'
 
 const SocialsContainer = styled.div``
 
@@ -70,19 +69,8 @@ const Facebook = styled.img`
   }
 `
 
-const Twitter = styled.img`
-  width: 35%;
-  height: auto;
-  cursor: pointer;
+const Twitter = styled.a`
   margin: 1.2rem;
-  display: block;
-  filter: grayscale(100%);
-  transition: filter 0.3s ease-in-out;
-
-  &:hover {
-    filter: none;
-    fill: blue;
-  }
 `
 
 const Social = styled.div`
@@ -125,9 +113,18 @@ const SocialsSection = () => {
             alt="Facebook"
           />
         </a>
-        <a href={main.social.twitter}>
-          {/* <Twitter src={twitterx} alt="Twitter" /> */}
-        </a>
+        <Twitter href={main.social.twitter}>
+          <svg
+            width="3.5rem"
+            height="3.5rem"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <g>
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+            </g>
+          </svg>
+        </Twitter>
       </SocialsImage>
     </SocialsContainer>
   )
