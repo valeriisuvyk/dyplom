@@ -70,7 +70,7 @@ const Facebook = styled.img`
 `
 
 const Twitter = styled.a`
-  margin: 1.2rem;
+  margin: 0.4rem 0rem 0.5rem 1.2rem;
 `
 
 const Social = styled.div`
