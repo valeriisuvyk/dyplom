@@ -29,6 +29,10 @@ const FooterContainer = styled.footer`
     justify-content: center;
     text-align: center;
   }
+
+  @media (max-width: 27em) {
+    padding: 1rem 0.5rem;
+  }
 `
 
 const Ul = styled.ul`
@@ -39,6 +43,10 @@ const Ul = styled.ul`
   @media (max-width: 50em) {
     justify-self: center;
     margin-top: 1rem;
+  }
+  @media (max-width: 27em) {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 `
 
@@ -64,6 +72,15 @@ const Privacy = styled.div`
     justify-self: center;
     margin-bottom: 0.5rem;
   }
+
+  @media (max-width: 27em) {
+    flex-wrap: wrap;
+    justify-self: center;
+    gap: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 const TalkToUs = styled.div`
@@ -81,6 +98,9 @@ const InfoFooter = styled.span`
   grid-column: 1 / -1;
   text-align: center;
   margin-top: 1rem;
+  @media (max-width: 27em) {
+    flex-wrap: wrap;
+  }
 `
 
 const Copyright = styled.p`
@@ -89,6 +109,9 @@ const Copyright = styled.p`
   grid-column: 1 / -1;
   text-align: center;
   margin-top: 0.5rem;
+  @media (max-width: 27em) {
+    flex-wrap: wrap;
+  }
 `
 
 const Footer = () => {
