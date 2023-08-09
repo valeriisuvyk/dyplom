@@ -5,7 +5,8 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import PlatformsSection from '../components/PlatformsSection'
 import SocialsSection from '../components/SocialsSection'
-import GlobalStyle from '../styles/globalStyles'
+// import GlobalStyle from '../styles/globalStyles'
+import GlobalFonts from '../fonts/fonts'
 
 const PageContainer = styled.div`
   font-family: 'Metropolis', sans-serif;
@@ -20,9 +21,7 @@ const PageContainer = styled.div`
 `
 
 const Main = styled.main`
-  //height: 200vh; //optional
   flex: 1 1 auto;
-
   padding: 5rem 0 4rem 4rem;
 `
 
@@ -38,7 +37,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <Footer />
       </PageContainer>
 
-      <GlobalStyle />
+      <GlobalFonts />
     </>
   )
 }
