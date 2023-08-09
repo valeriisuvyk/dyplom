@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import content from '../../content/pages/home.yml'
-import { HomePage } from '../cms'
+import { Tatreal } from '../cms'
 
 const PlatformsContainer = styled.div``
 
@@ -109,7 +109,7 @@ const SoundCloud = styled.img`
   }
 `
 const PlatformsSection = () => {
-  const { main } = content as HomePage
+  const { main } = content as Tatreal
 
   return (
     <PlatformsContainer>

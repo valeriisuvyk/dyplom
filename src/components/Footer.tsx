@@ -1,4 +1,5 @@
 import React from 'react'
+import content from '../../content/pages/home.yml'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
@@ -12,8 +13,7 @@ import {
   faDiscord,
 } from '@fortawesome/free-brands-svg-icons'
 import { faComments } from '@fortawesome/free-solid-svg-icons'
-import content from '../../content/pages/home.yml'
-import { HomePage } from '../cms'
+import { Tatreal } from '../cms'
 
 const FooterContainer = styled.footer`
   display: grid;
@@ -72,12 +72,12 @@ const TalkToUs = styled.div`
   &:hover {
     color: lightgray;
   }
-  font-weight: 400;
+  font-weight: normal;
 `
 
 const InfoFooter = styled.span`
   color: rgb(136, 136, 136);
-  font-weight: 400;
+  font-weight: normal;
   grid-column: 1 / -1;
   text-align: center;
   margin-top: 1rem;
@@ -85,14 +85,14 @@ const InfoFooter = styled.span`
 
 const Copyright = styled.p`
   color: rgb(136, 136, 136);
-  font-weight: 400;
+  font-weight: normal;
   grid-column: 1 / -1;
   text-align: center;
   margin-top: 0.5rem;
 `
 
 const Footer = () => {
-  const { main } = content as HomePage
+  const { main } = content as Tatreal
 
   return (
     <FooterContainer>

@@ -5,7 +5,6 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import PlatformsSection from '../components/PlatformsSection'
 import SocialsSection from '../components/SocialsSection'
-// import GlobalStyle from '../styles/globalStyles'
 import GlobalFonts from '../fonts/fonts'
 
 const PageContainer = styled.div`

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import content from '../../content/pages/home.yml'
-import { HomePage } from '../cms'
+import { Tatreal } from '../cms'
 
 const HeaderContainer = styled.header`
   background-color: rgb(51, 51, 51);
@@ -54,7 +54,7 @@ const A = styled.a`
 `
 
 const Header = () => {
-  const { header } = content as HomePage
+  const { header } = content as Tatreal
   return (
     <HeaderContainer>
       <Logo src={header.logo} alt="tatreal" />

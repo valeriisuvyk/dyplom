@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import content from '../../content/pages/home.yml'
-import { HomePage } from '../cms'
+import { Tatreal } from '../cms'
 
 const SocialsContainer = styled.div``
 
@@ -83,7 +83,7 @@ const Social = styled.div`
   font-weight: 700;
 `
 const SocialsSection = () => {
-  const { main } = content as HomePage
+  const { main } = content as Tatreal
 
   return (
     <SocialsContainer>
