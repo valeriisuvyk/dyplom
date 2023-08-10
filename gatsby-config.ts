@@ -16,6 +16,9 @@ const config: GatsbyConfig = {
   plugins: [
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-styled-components',
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: 'gatsby-plugin-google-gtag',
       options: {
@@ -25,7 +28,7 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/images/icon.png',
+        icon: 'src/images/logo.png',
       },
     },
   ],

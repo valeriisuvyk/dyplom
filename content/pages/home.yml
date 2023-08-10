@@ -8,16 +8,15 @@ header:
   logo: /assets/logo.svg
 main:
   music:
-    spotify: https://open.spotify.com/
+    spotify: https://open.spotify.com/artist/12JiWFZAQNYHhhmpxlcwcp
+    bandcamp: https://tatreal.bandcamp.com/
+    youtube: https://www.youtube.com/channel/UC5DASm_3cpuFGhacXidI4Qw
+    soundcloud: https://soundcloud.com/tatreal
+    deezer: https://www.deezer.com/en/artist/5482783
     itunes: https://music.apple.com/ru/browse
-    bandcamp: https://bandcamp.com/
-    deezer: https://www.deezer.com/en/
-    youtube: https://www.youtube.com/
-    soundcloud: https://soundcloud.com/discover
   social:
-    discord: https://discord.gg/chillhop
-    reddit: https://discord.gg/chillhop
-    instagram: https://discord.gg/chillhop
-    facebook: https://discord.gg/chillhop
-    twitter: https://discord.gg/chillhop
-    twitterlogo: /assets/icons8-twitterx.svg
+    instagram: https://www.instagram.com/tatreal/
+    facebook: https://www.facebook.com/mrtatreal/
+    twitter: https://twitter.com/SlavaTatreal
+    reddit: https://discord.gg/
+    discord: https://discord.gg/

@@ -20,15 +20,15 @@ const PageContainer = styled.div`
 `
 
 const Main = styled.main`
+  padding: 0 4rem;
   flex: 1 1 auto;
-  padding: 5rem 0 4rem 4rem;
 `
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <>
       <PageContainer>
-        <Header />
+        {/* <Header /> */}
         <Main>
           <PlatformsSection />
           <SocialsSection />
