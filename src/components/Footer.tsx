@@ -3,6 +3,7 @@ import content from '../../content/pages/home.yml'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
+  faDeezer,
   faYoutube,
   faTwitter,
   faFacebook,
@@ -166,6 +167,11 @@ const Footer = () => {
         <li>
           <A href={main.social.discord}>
             <FontAwesomeIcon icon={faDiscord} size="lg" />
+          </A>
+        </li>
+        <li>
+          <A href={main.music.deezer}>
+            <FontAwesomeIcon icon={faDeezer} size="lg" />
           </A>
         </li>
       </Ul>
