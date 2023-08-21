@@ -5,7 +5,11 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import PlatformsSection from '../components/PlatformsSection'
 import SocialsSection from '../components/SocialsSection'
-import GlobalFonts from '../fonts/fonts'
+import GlobalFonts from '../fonts'
+import { RecentWorks } from '../components/RecentWorks'
+import { ListenMusic } from '../components/ListenMusic'
+import { AboutMe } from '../components/AboutMe'
+import { ContactMe } from '../components/ContactMe'
 
 const PageContainer = styled.div`
   font-family: 'Metropolis', sans-serif;
@@ -20,7 +24,7 @@ const PageContainer = styled.div`
 `
 
 const Main = styled.main`
-  padding: 0 4rem;
+  padding: 2rem 4rem 0 4rem;
   flex: 1 1 auto;
 `
 
@@ -30,8 +34,12 @@ const IndexPage: React.FC<PageProps> = () => {
       <PageContainer>
         {/* <Header /> */}
         <Main>
+          <RecentWorks />
+          <ListenMusic />
           <PlatformsSection />
+          <AboutMe />
           <SocialsSection />
+          <ContactMe />
         </Main>
         <Footer />
       </PageContainer>
