@@ -5,7 +5,5 @@ const RecentWorksContainer = styled.section`
   background: #9cffad;
 `
 export const RecentWorks = () => {
-  return (
-    <RecentWorksContainer id="recentworks">RecentWorks</RecentWorksContainer>
-  )
+  return <RecentWorksContainer id="recentworks" />
 }

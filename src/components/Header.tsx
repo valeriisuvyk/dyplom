@@ -8,13 +8,20 @@ import { Link } from 'react-scroll'
 
 const HeaderContainer = styled.header`
   background-color: rgb(51, 51, 51);
+  /* background: linear-gradient(
+    to bottom,
+    rgb(51, 51, 51) 100%,
+    rgba(0, 0, 0, 0) 100%
+  ); */
+
+  padding: 1rem 4rem;
+  /* padding-bottom: 3rem; */
+
   z-index: 10;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-
-  padding: 1rem 4rem;
 
   display: flex;
   justify-content: space-between;
