@@ -23,6 +23,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "babel-plugin-styled-components": "^2.1.4",
+    "formik": "^2.4.3",
     "gatsby": "^5.11.0",
     "gatsby-plugin-google-gtag": "^5.11.0",
     "gatsby-plugin-image": "^3.11.0",
@@ -37,10 +38,13 @@
     "netlify-cms-app": "^2.15.72",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-modal": "^3.16.1",
+    "react-scroll": "^1.8.9",
     "react-slick": "^0.29.0",
     "reset-css": "^5.0.1",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^6.0.5"
+    "styled-components": "^6.0.5",
+    "yup": "^1.2.0"
   },
   "devDependencies": {
     "@types/node": "^20.3.3",

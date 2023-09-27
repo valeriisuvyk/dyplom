@@ -4,3 +4,5 @@ declare module '*.yml' {
 }
 declare module '*.woff'
 declare module '*.woff2'
+declare module 'react-scroll'
+declare module 'react-modal'

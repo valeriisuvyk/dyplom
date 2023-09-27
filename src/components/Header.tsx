@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import content from '../../content/pages/home.yml'
 import { Tatreal } from '../cms'
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-scroll'
 
 const HeaderContainer = styled.header`
   background-color: rgb(51, 51, 51);
@@ -26,6 +29,17 @@ const Navigation = styled.nav`
   flex-wrap: wrap;
   gap: 0.5rem 2rem;
   margin: 0 0.5rem;
+
+  a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      color: lightgray;
+    }
+  }
 `
 
 const Logo = styled.img`
@@ -45,25 +59,39 @@ const Button = styled.button`
   color: rgb(51, 51, 51);
   font-size: 1rem;
 `
-const A = styled.a`
-  &:hover {
-    color: lightgray;
-  }
-  color: white;
-  text-decoration: none;
-`
-
+const MobileMenuButton = styled.button``
 const Header = () => {
   const { header } = content as Tatreal
+
   return (
     <HeaderContainer>
       <Logo src={header.logo} alt="tatreal" />
+      {/* <MobileMenuButton onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        {' '}
+        // TODO
+        {isMenuOpen ? (
+          <FontAwesomeIcon icon={faTimes} />
+        ) : (
+          <FontAwesomeIcon icon={faBars} />
+        )}
+      </MobileMenuButton> */}
+
       <Navigation>
-        <A href="/">{header.nav.item1}</A>
-        <A href="/">{header.nav.item2}</A>
-        <A href="/">{header.nav.item3}</A>
+        <Link to="recentworks" smooth={true} duration={500}>
+          {header.nav.item1}
+        </Link>
+        <Link to="music" smooth={true} duration={500}>
+          {header.nav.item2}
+        </Link>
+        <Link to="about" smooth={true} duration={500}>
+          {header.nav.item3}
+        </Link>
       </Navigation>
-      <Button>{header.button}</Button>
+      <Button>
+        <Link to="contactme" smooth={true} duration={500}>
+          {header.button}
+        </Link>
+      </Button>
     </HeaderContainer>
   )
 }

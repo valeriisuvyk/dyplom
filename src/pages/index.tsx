@@ -32,7 +32,7 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <>
       <PageContainer>
-        {/* <Header /> */}
+        <Header />
         <Main>
           <RecentWorks />
           <ListenMusic />
