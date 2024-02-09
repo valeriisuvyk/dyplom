@@ -37,7 +37,7 @@ const ScrollToTopButton = styled.button<ScrollToTopButtonProps>`
 
   position: fixed;
   bottom: 1.25rem; // 20px
-  right: ${(props) => (props.show ? '1.25rem' : '-4.375rem')}; // 70p
+  right: ${(props) => (props.show ? '1.25rem' : '-4.375rem')}; // 70px
   display: ${(props) => (props.show ? 'block' : 'none')};
   background-color: rgb(51, 51, 51);
   border: none;
@@ -46,7 +46,8 @@ const ScrollToTopButton = styled.button<ScrollToTopButtonProps>`
   height: 3.125rem;
   font-size: 1.125rem;
   cursor: pointer;
-  transition: right 0.3s, filter 0.3s;
+  transition: right 0.3s, filter 0.3s, opacity 0.3s;
+  opacity: 0.7;
 
   &:hover {
     right: ${(props) => (props.show ? '1.25rem' : '-4.375rem')};
@@ -89,7 +90,7 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <>
       <PageContainer>
-        <Header />
+        {/* <Header /> */}
         <Main>
           <RecentWorks />
           <ListenMusic />
