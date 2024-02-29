@@ -22,9 +22,12 @@
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@types/flickity": "^2.2.9",
     "babel-plugin-styled-components": "^2.1.4",
+    "flickity": "^3.0.0",
     "formik": "^2.4.3",
     "gatsby": "^5.11.0",
+    "gatsby-image": "^3.11.0",
     "gatsby-plugin-google-gtag": "^5.11.0",
     "gatsby-plugin-image": "^3.11.0",
     "gatsby-plugin-manifest": "^5.11.0",
@@ -44,12 +47,14 @@
     "reset-css": "^5.0.1",
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.0.5",
+    "swiper": "^10.3.1",
     "yup": "^1.2.0"
   },
   "devDependencies": {
     "@types/node": "^20.3.3",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
+    "@types/react-slick": "^0.23.13",
     "@types/styled-components": "^5.1.26",
     "netlify-ts": "^2.0.0",
     "typescript": "^5.1.6"

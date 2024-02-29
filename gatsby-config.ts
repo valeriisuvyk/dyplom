@@ -31,7 +31,15 @@ const config: GatsbyConfig = {
         icon: 'src/images/logo.png',
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `backgrounds`,
+        path: `static/bg`, // wherever background images are stored
+      },
+    } 
   ],
+  
 }
 
 export default config

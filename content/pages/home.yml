@@ -20,3 +20,22 @@ main:
     twitter: https://twitter.com/SlavaTatreal
     reddit: https://discord.gg/
     discord: https://discord.gg/
+  aboutme:
+    - text: 'Slide 1'
+      longText: 'Jorge Artola is a Panama-born, Spain-based illustrator and animator. Almost one year ago exactly, he began working with us on art development for the'
+      backgroundImage: '/assets/berserkbackground1.jpg'
+    - text: 'Slide 2'
+      longText: 'Second slide long text'
+      backgroundImage: '/assets/berserkbackground2.jpg'
+    - text: 'Slide 3'
+      longText: '12312321'
+      backgroundImage: '/assets/berserkbackground3.jpg'
+    - text: 'Slide 4'
+      longText: '44444444'
+      backgroundImage: '/assets/berserkbackground4.jpg'
+    - text: 'Slide 5'
+      longText: '55555555'
+      backgroundImage: '/assets/berserkbackground5.jpg'
+    - text: 'Slide 6'
+      longText: '66666666'
+      backgroundImage: '/assets/berserkbackground6.jpg'
