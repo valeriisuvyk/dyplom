@@ -67,3 +67,16 @@ collections:
                     widget: string
                   - name: twitterlogo
                     widget: string
+              - name: 'aboutme'
+                label: 'Slides'
+                widget: 'list'
+                fields:
+                  - name: 'text'
+                    label: 'Text'
+                    widget: 'string'
+                  - name: 'longText'
+                    label: 'Long Text'
+                    widget: 'markdown'
+                  - name: 'backgroundImage'
+                    label: 'Background Image'
+                    widget: 'image'
