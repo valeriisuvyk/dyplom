@@ -176,7 +176,7 @@ const Footer = () => {
         </li>
       </Ul>
       <InfoFooter>info@my-site.com</InfoFooter>
-      <Copyright>© 2012-2023 BY TATREAL MUSIC</Copyright>
+      <Copyright>© 2012-2026 BY TATREAL MUSIC</Copyright>
     </FooterContainer>
   )
 }
